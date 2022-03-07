@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>ふぁみーゆ支払い計算</title>
+  <title>あんじゅえーる支払い計算</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/calculation.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,17 +10,17 @@
 </head>
 <body>
   <main>
-  <h1>ふぁみーゆ支払い計算</h1>
+  <h1>あんじゅえーる支払い計算</h1>
 
   <form name="form">
     <h2>初回セット<span>※必須</span></h2>
     <div class="first-price">
       <p><input type="radio" name="first" value="60-1">バータイム</p>
       <div class="group-set">
-        <input type="radio" name="first" value="90">G1セット
+        <input type="radio" name="first" value="90">１軍セット
       </div>
       <div class="group-set">
-        <input type="radio" name="first" value="60-2">G２セット
+        <input type="radio" name="first" value="60-2">２軍セット
       </div>
     </div>
 
@@ -36,8 +36,16 @@
       </div>
       <p>延長回数<input type="text" name="extension_q" id="field1">回</p>
       <p style="display: none;">延長料金<input type="text" name="extension_p" id="field2">円</p>
+      <p>今の延長が終わる時間<input type="text" name="finish_hour" id="feild25">時
+        <input type="text" name="finish_minute" id="feild26">分
+      </p>
     </div>
 
+
+
+
+
+    
     <div class="none" style="display: none;">
     <div class="cast-drink">
       <h2>キャストドリンク</h2>
@@ -117,6 +125,8 @@
       go_hour.value,
       go_minute.value,
       first.value,
+      finish_hour.value,
+      finish_minute.value,
       outher_p.value,
       outher_m.value,
       champagneA.value,

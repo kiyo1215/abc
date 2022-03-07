@@ -4,7 +4,7 @@ body {
 
 main {
   width: 85%;
-  height: 100vh;
+  height: 110vh;
   background-color: white;
   text-align: center;
   padding: 20px 0;
@@ -104,6 +104,8 @@ a {
   font-size: 18px;
   color: blue;
   text-decoration: none;
+  display: block;
+  margin-bottom: 30px;
 }
 
 a:focus {
